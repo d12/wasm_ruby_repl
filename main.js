@@ -22,7 +22,7 @@ function exec_ruby(ruby_code) {
   var result = Module._ruby_exec(ptr, typedArray.length)
 }
 
-function beeees(){
+function runCode(){
   text = document.getElementById("code").value
   exec_ruby(text);
 }

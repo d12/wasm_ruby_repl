@@ -25,18 +25,6 @@ function exec_ruby(ruby_code) {
 
   //call wasm func
   var result = Module._ruby_exec(a_ptr, a_typedArray.length)
-
-  /* ----- */
-
-  // fill the result to a js array
-  // const arrayData = []
-  // for (let pointer=0; pointer<11; pointer++) {
-  //   arrayData.push(Module.HEAPF32[result/Float32Array.BYTES_PER_ELEMENT+pointer])
-  // }
-  // //convert ascii array to string and display the result
-  // var res_string = String.fromCharCode.apply(null, arrayData)
-  // console.log(`Input: a: "${a}", b: "${b}"`)
-  // console.log(`Result on concat: "${res_string}"`)
 }
 
 function beeees(){
